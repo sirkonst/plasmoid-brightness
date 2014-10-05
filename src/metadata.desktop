@@ -13,7 +13,7 @@ X-Plasma-MainScript=code/main.py
 X-Plasma-DefaultSize=32,600
 
 X-KDE-PluginInfo-Name=brightness
-X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Version=1.1
 X-KDE-PluginInfo-Author=Konstantin Enchant
 X-KDE-PluginInfo-Email=sirkonst@gmail.com
 X-KDE-PluginInfo-Website=https://github.com/sirkonst/plamoid-brightness
