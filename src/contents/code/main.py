@@ -15,10 +15,11 @@ class BrightnessPlasmoid(plasmascript.Applet):
 
     def __init__(self, parent, args=None):
         plasmascript.Applet.__init__(self, parent)
+
+    def init(self):
         self.dbusloop = DBusQtMainLoop()
         self.bus = dbus.SessionBus(mainloop=self.dbusloop)
 
-    def init(self):
         self.setHasConfigurationInterface(False)
         self.setAspectRatioMode(Plasma.IgnoreAspectRatio)
 
@@ -64,7 +65,7 @@ class BrightnessSlider(Plasma.Slider):
         )
         curr_bright = self.bright_if.brightness()
 
-        self.setMinimum(5)
+        self.setMinimum(1)
         self.setMaximum(100)
         self.setValue(curr_bright)
         self.sliderMoved.connect(self.on_change_value)
